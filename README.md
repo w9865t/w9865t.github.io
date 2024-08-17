@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
 
- [**Chirpy**][chirpy] 를 이용한 Jekyll 기반 Github 블로그입니다.
+ [**Chirpy**][chirpy] 를 이용한 Jekyll 기반 Github 블로그입니다!
 
 [chirpy-starter][template] 템플릿을 통해 만들어졌습니다.
 
