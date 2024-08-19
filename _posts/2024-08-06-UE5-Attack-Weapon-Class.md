@@ -6,7 +6,7 @@ tags: [unreal]     # TAG names should always be lowercase
 description: "캐릭터가 사용할 무기 클래스 구현"
 ---
 
-![](assets/img/posts/UE5.png)
+![](/assets/img/posts/UE5.png)
 
 ## 구현 목표
 마우스 좌클릭으로 공격 애니메이션을 재생하고 다른 캐릭터에게 대미지를 입히는 기능 구현하기
@@ -36,7 +36,7 @@ UStaticMeshComponent* WeaponMesh;
 ```
 `VisibleAnywhere` 로 선언하였기 때문에 전에 만든 캐릭터 클래스와 마찬가지로, C++ 무기 클래스를 상속한 블루프린트 무기 클래스의 디테일 패널에서 쓰고 싶은 에셋을 설정해 줄 수 있다.
 
-![](assets/img/posts/UE5-Attack-Weapon-Class/WeaponMesh.png)
+![](/assets/img/posts/UE5-Attack-Weapon-Class/WeaponMesh.png)
 
 나중에 변경할지도 모르지만 일단 언리얼 마켓플레이스의 [Free Fantasy Weapon Sample Pack](https://www.unrealengine.com/marketplace/ko/product/e4494c76c3b348aba7ef9b263a6dd496?lang=ko) 을 임시로 사용하기로 했다.
 

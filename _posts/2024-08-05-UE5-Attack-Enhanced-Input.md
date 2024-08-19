@@ -6,7 +6,7 @@ tags: [unreal]     # TAG names should always be lowercase
 description: "마우스 좌클릭 입력 시 실행할 공격 함수 구현(UE5의 향상된 입력 사용)"
 ---
 
-![](assets/img/posts/UE5.png)
+![](/assets/img/posts/UE5.png)
 
 ## 구현 목표
 마우스 좌클릭으로 공격 애니메이션을 재생하고 다른 캐릭터에게 대미지를 입히는 기능 구현하기
@@ -27,12 +27,12 @@ description: "마우스 좌클릭 입력 시 실행할 공격 함수 구현(UE5�
 
 나의 경우 `IA_Attack`, `IMC_MainCharacter` 이라는 이름으로 생성하였다.
 
-![](assets/img/posts/UE5-Attack-Enhanced-Input/IA_Attack.png) ![](assets/img/posts/UE5-Attack-Enhanced-Input/IMC_MainCharacter.png)
+![](/assets/img/posts/UE5-Attack-Enhanced-Input/IA_Attack.png) ![](/assets/img/posts/UE5-Attack-Enhanced-Input/IMC_MainCharacter.png)
 
 `IMC_MainCharacter`을 열어 매핑을 추가하고, 아까 생성한 `IA_Attack`을 등록해 주었다.
 왼쪽 마우스 버튼을 클릭했을 때 공격하고 싶으므로 왼쪽 마우스 버튼으로 매핑한다.
 
-![](assets/img/posts/UE5-Attack-Enhanced-Input/LeftMouse.png)
+![](/assets/img/posts/UE5-Attack-Enhanced-Input/LeftMouse.png)
 
 ### 입력 에셋을 캐릭터에 연동하기
 캐릭터에 아까 언리얼 에디터에서 만든 `IA_Attack`와 `IMC_MainCharacter`를 연동해주기 위해 캐릭터 클래스의 헤더 파일에 `DefaultMappingContext`와 `AttackAction` 변수를 만들고, UPROPERTY 매크로로 블루프린트에서도 수정할 수 있도록 `EditAnywhere`라고 선언해 주었다.
@@ -45,8 +45,8 @@ UInputAction* AttackAction;
 ```
 이렇게 변수를 만들어 두면 C++ 캐릭터 클래스를 상속한 블루프린트 클래스에서 변수에 다음과 같이 할당해 줄 수 있다.
 
-![](assets/img/posts/UE5-Attack-Enhanced-Input/DefaultMappingContext.png)
-![](assets/img/posts/UE5-Attack-Enhanced-Input/AttackAction.png)
+![](/assets/img/posts/UE5-Attack-Enhanced-Input/DefaultMappingContext.png)
+![](/assets/img/posts/UE5-Attack-Enhanced-Input/AttackAction.png)
 
 다음으로 캐릭터 클래스 헤더 파일에 공격 시 실행할 `Attack` 함수와 공격 끝날 때 실행할 `AttackEnd` 함수를 정의하였다.
 ```cpp

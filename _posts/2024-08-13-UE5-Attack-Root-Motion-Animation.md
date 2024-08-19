@@ -6,7 +6,7 @@ tags: [unreal]     # TAG names should always be lowercase
 description: "루트 본, 루트 모션 애니메이션이란 무엇인가"
 ---
 
-![](assets/img/posts/UE5.png)
+![](/assets/img/posts/UE5.png)
 
 ## 구현 목표
 마우스 좌클릭으로 공격 애니메이션을 재생하고 다른 캐릭터에게 대미지를 입히는 기능 구현하기
@@ -39,13 +39,13 @@ Root Bone 이라는 단어를 직역하면 '근본 뼈' 가 된다. 그 말대�
 
 애니메이션에 에셋에 루트 본이 어떻게 움직여야 하는지에 대한 데이터가 없는, 즉 루트 모션 애니메이션이 아닌 경우, 캐릭터는 한 장소에 고정된 채로 애니메이션이 재생된다.
 
-![](assets/img/posts/UE5-Attack-Root-Motion-Animation/non-RMA.gif)
+![](/assets/img/posts/UE5-Attack-Root-Motion-Animation/non-RMA.gif)
 
 고정되어 있으므로 이와 같이 애니메이션 재생이 종료되면 고정된 장소로 돌아와 버린다는 것이다.
 
 반면 애니메이션 에셋에 루트 본 데이터가 있는, **루트 모션 애니메이션**을 사용할 경우 어떻게 될까?
 
-![](assets/img/posts/UE5-Attack-Root-Motion-Animation/RMA.gif)
+![](/assets/img/posts/UE5-Attack-Root-Motion-Animation/RMA.gif)
 
 아까 루트 본은 3D 공간에서 캐릭터의 전체 위치를 정의하는 뼈라고 했다. 따라서, 애니메이션에 의해 루트 본이 움직이면, **실제 캐릭터의 위치도 애니메이션에 따라 함께 변화하게 된다.**
 
@@ -66,7 +66,7 @@ Root Bone 이라는 단어를 직역하면 '근본 뼈' 가 된다. 그 말대�
 
 알 사람은 이미 다 알고 있겠지만 어도비에서 운영하는 [Mixamo](https://www.mixamo.com/) 라는 서비스이다.
 
-![](assets/img/posts/UE5-Attack-Root-Motion-Animation/about_mixamo.png)
+![](/assets/img/posts/UE5-Attack-Root-Motion-Animation/about_mixamo.png)
 
 [Adobe Mixamo FAQ 페이지](https://helpx.adobe.com/kr/creative-cloud/faq/mixamo-faq.html)
 
@@ -74,7 +74,7 @@ Root Bone 이라는 단어를 직역하면 '근본 뼈' 가 된다. 그 말대�
 
 다만, 믹사모에서 다운받은 에셋을 그대로 언리얼 엔진으로 가지고 오면 문제가 발생하게 된다.
 
-![](assets/img/posts/UE5-Attack-Root-Motion-Animation/mixamo_error.gif)
+![](/assets/img/posts/UE5-Attack-Root-Motion-Animation/mixamo_error.gif)
 
 에셋 디테일 패널에서 **루트 모션 활성화** 를 체크하는 순간 뭔가 동작이 이상해지는 걸 볼 수 있는데 이건 **루트 본이 Hips로 자동 지정되기 때문**이다.
 
@@ -86,17 +86,17 @@ Root Bone 이라는 단어를 직역하면 '근본 뼈' 가 된다. 그 말대�
 
 플러그인 설치하고 어떻게 구동하는지 몰라서 한참 헤맸는데 엄청 코딱지만한 메뉴 안에 숨어있으므로 잘 찾아서 누르자.
 
-![](assets/img/posts/UE5-Attack-Root-Motion-Animation/blender_plugin.png)
+![](/assets/img/posts/UE5-Attack-Root-Motion-Animation/blender_plugin.png)
 
 숨어있는 화살표를 누르고 Mixamo 탭으로 들어가면 다음과 같은 창이 뜬다.
 
-![](assets/img/posts/UE5-Attack-Root-Motion-Animation/blender_plugin_2.png)
+![](/assets/img/posts/UE5-Attack-Root-Motion-Animation/blender_plugin_2.png)
 
 주의할 점은, **Apply Rotation 은 체크 해제** 하고 변환해야 한다는 것.
 
 변환한 파일을 다시 언리얼 엔진에 임포트해보면 다음과 같이 루트 본이 추가되어, 루트 모션 활성화를 선택해도 정상적으로 애니메이션이 재생되는 모습을 볼 수 있다.
 
-![](assets/img/posts/UE5-Attack-Root-Motion-Animation/error_resolved.gif)
+![](/assets/img/posts/UE5-Attack-Root-Motion-Animation/error_resolved.gif)
 
 ***
 

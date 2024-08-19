@@ -6,7 +6,7 @@ tags: [unreal]     # TAG names should always be lowercase
 description: "ApplyDamage를 사용한 공격과 피격 매커니즘 구현"
 ---
 
-![](assets/img/posts/UE5.png)
+![](/assets/img/posts/UE5.png)
 
 ## 구현 목표
 마우스 좌클릭으로 공격 애니메이션을 재생하고 다른 캐릭터에게 대미지를 입히는 기능 구현하기
