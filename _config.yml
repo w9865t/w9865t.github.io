@@ -14,9 +14,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: w9865t-log # the main title
+title: w9865t-devlog # the main title
 
-tagline: 만들고 싶은거 만들며 살기 # it will display as the sub-title
+tagline: 길모퉁이 개발자 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   언리얼 엔진 및 잡다한 개발 정보를 업로드하는 블로그.
