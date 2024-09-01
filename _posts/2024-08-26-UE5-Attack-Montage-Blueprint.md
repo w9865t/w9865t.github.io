@@ -1,7 +1,7 @@
 ---
 title: "[UE5] 공격 기능 구현 5 - 애니메이션 구현 (애니메이션 몽타주, 애니메이션 블루프린트란?)"
 date: 2024-08-26 0:00:00 +09:00
-categories: [Unreal Engine 5, 공격 기능 구현]
+categories: [Unreal Engine 5, 공격 기능 구현, 애니메이션]
 tags: [unreal]     # TAG names should always be lowercase
 description: "애니메이션 몽타주, 애니메이션 블루프린트란 무엇인가"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "[UE5] 공격 기능 구현 4 - 애니메이션 구현 (루트 본, 루트 모션 애니메이션이란?)"
 date: 2024-08-13 0:00:00 +09:00
-categories: [Unreal Engine 5, 공격 기능 구현]
+categories: [Unreal Engine 5, 공격 기능 구현, 애니메이션]
 tags: [unreal]     # TAG names should always be lowercase
 description: "루트 본, 루트 모션 애니메이션이란 무엇인가"
 ---
