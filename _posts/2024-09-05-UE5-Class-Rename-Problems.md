@@ -3,7 +3,7 @@ title: "[UE5] C++ 클래스 이름 변경 후 생긴 문제들과 해결 방법"
 date: 2024-09-05 0:00:00 +09:00
 categories: [Unreal Engine 5, 문제 해결]
 tags: [unreal]     # TAG names should always be lowercase
-description: "웬만하면 하지 말자"
+description: "웬만하면 이름 바꾸지 말자"
 ---
 
 ![](/assets/img/posts/UE5.png)
