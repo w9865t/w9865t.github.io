@@ -55,7 +55,7 @@ UMG 는 블루프린트와 비주얼 에디터를 통해 쉽고 직관적으로 
 > 3. 위젯 블루프린트에 추가한 위젯과 **같은 이름으로** 변수를 만들고 `UPROPERTY(meta = (BindWidget))` 매크로 사용
 > 4. 위젯 블루프린트의 부모 클래스를 C++ 클래스로 변경
 
-이렇게 하면 C++ 코드와 위젯 블루프린트를 묶어서 사용할 수 있다. 다만 `BindWiget` 을 사용할 경우 변수의 이름이 위젯 블루프린트에 추가해둔 위젯과 다르면 컴파일 오류가 발생하게 된다. `UPROPERTY(meta = (BindWidgetOptional))` 로 매크뢰를 지정하면 컴파일은 정상적으로 진행하되 같은 이름의 위젯이 없을 때 디버그 메시지를 띄우게 할 수 있다.
+이렇게 하면 C++ 코드와 위젯 블루프린트를 묶어서 사용할 수 있다. 다만 `BindWidget` 을 사용할 경우 변수의 이름이 위젯 블루프린트에 추가해둔 위젯과 다르면 컴파일 오류가 발생하게 된다. `UPROPERTY(meta = (BindWidgetOptional))` 로 매크뢰를 지정하면 컴파일은 정상적으로 진행하되 같은 이름의 위젯이 없을 때 디버그 메시지를 띄우게 할 수 있다.
 
 ### 위젯
 
@@ -79,14 +79,14 @@ HUD 만의 고유 기능들이 있긴 하지만 UE5 에 이르러서는 HUD 클�
 
 ## 참고한 링크
 
-[언리얼 5.4 공식 문서 | 유저 인터페이스 만들기](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/creating-user-interfaces-with-umg-and-slate-in-unreal-engine?application_version=5.4)
+[언리얼 5.4 공식 문서 - 유저 인터페이스 만들기](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/creating-user-interfaces-with-umg-and-slate-in-unreal-engine?application_version=5.4)
 
-[언리얼 5.4 공식 문서 | 유저 인터페이스 및 HUD](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/user-interfaces-and-huds-in-unreal-engine?application_version=5.4)
+[언리얼 5.4 공식 문서 - 유저 인터페이스 및 HUD](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/user-interfaces-and-huds-in-unreal-engine?application_version=5.4)
 
-[언리얼 엔진 개발자 포럼 | HUD and a simple widget - what the different?](https://forums.unrealengine.com/t/hud-and-a-simple-widget-what-the-different/483667)
+[언리얼 엔진 개발자 포럼 - HUD and a simple widget - what the different?](https://forums.unrealengine.com/t/hud-and-a-simple-widget-what-the-different/483667)
 
-[언리얼 엔진 개발자 포럼 | What is the appropiate relationship between HUD and Widgets?](https://forums.unrealengine.com/t/what-is-the-appropiate-relationship-between-hud-and-widgets/21138/4)
+[언리얼 엔진 개발자 포럼 - What is the appropiate relationship between HUD and Widgets?](https://forums.unrealengine.com/t/what-is-the-appropiate-relationship-between-hud-and-widgets/21138/4)
 
 [명령형 프로그래밍 vs 선언형 프로그래밍](https://dmdwn3979.tistory.com/14)
 
-[위키백과 | Indirection](https://en.wikipedia.org/wiki/Indirection)
+[위키백과 - Indirection](https://en.wikipedia.org/wiki/Indirection)
